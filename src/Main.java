@@ -32,5 +32,13 @@ public class Main {
     }
     public static void task3(){
         System.out.println("Задача 3");
+        int population = 12_000_000;
+        int fertilityPopulation = population * 17 / 1000;
+        int deadPopulation = population * 8 / 1000;
+        for (int year = 1; year <= 10; year = year + 1){
+            population = population + (fertilityPopulation - deadPopulation);
+            System.out.println("Год " + year + " , численность населения составляет "+ population);
+        }
+
     }
 }
