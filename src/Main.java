@@ -1,12 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        task1();
-        task2();
-        task3();
-        task4();
-        task5();
-        task6();
-        task7();
+       task1();
+       task2();
+       task3();
+       task4();
+       task5();
+       task6();
+       task7();
+       task8();
     }
     public static void task1(){
         System.out.println("Задача 1");
@@ -88,25 +89,22 @@ public class Main {
         }
         System.out.println();
     }
-    //В компании пятница — отчетный день.
-    //
-    //Нужно написать программу, которая считает дни месяца по датам,
-    // определяет, какой день пятница, и выводит сообщение с напоминанием,
-    // что нужно подготовить еженедельный отчет.
-    //
-    //Создайте переменную типа int, которая хранит в себе номер первой пятницы месяца
-    // (число от 1 до 7).
-    //
-    //Выведите на каждую пятницу месяца (включая полученную) сообщение
-    // следующего вида: «Сегодня пятница, ...-е число. Необходимо подготовить отчет».
-    //
-    //В нашем месяце 31 день. В результате у вас должно получиться от 4 до 5
-    // сообщений с напоминаниями по разным датам.
     public static void task7(){
         System.out.println("Задача 7");
         int friday = 3;
         for (friday = 3;friday <=31; friday = friday + 7)
             System.out.println("Сегодня пятница, " + friday +" -е число. Необходимо подготовить отчет");
+        System.out.println();
+    }
+    public static void task8(){
+        System.out.println("Задача 8");
+        int totalEayr = 2023 - 200;
+        int totalEyarEnd = 2023 + 100;
+        for (int eyar = totalEayr; eyar <= totalEyarEnd; eyar ++){
+            if (eyar % 79 == 0)
+            System.out.println(eyar);
+
+        }
     }
 
 }
